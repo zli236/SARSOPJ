@@ -29,7 +29,7 @@ public class nativetest {
 //			e.printStackTrace();
 //		}
 		nativetest nt = new nativetest();
-		String[] params = {"simulate", "--simLen" ,"1000" ,"--simNum" ,"2" ,"--policy-file" ,"/home/zhengli/workspace2/appl-0.95/src/out.policy" ,"/home/zhengli/workspace2/appl-0.95/examples/POMDP/DataCleaning1.pomdp"};
+		String[] params = {"simulate", "--simLen" ,"1000" ,"--simNum" ,"2" ,"--policy-file" ,"../out.policy" ,"../../examples/POMDP/DataCleaning1.pomdp"};
 		int retval = nt.startSimulator((short)8, params);
 		System.out.println("Returned Value: "+retval);
 	}
