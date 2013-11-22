@@ -1,0 +1,18 @@
+1.Edit /etc/enviroment and add:
+JAVA_HOME=/usr/lib/jvm/java-6-openjdk-amd64
+
+2.Under /src, run
+make 
+
+3.To run a POMDP example and get a policy file:
+under /src
+./pomdpsol ../examples/POMDP/DataCleaning1.POMDP
+
+4.Under /src/JNI, compile nativetest.java, which is the Java entry file to c++
+javac nativetest.java
+set Java library path
+export LD_LIBRARY_PATH=../
+run nativetest
+java nativetest
+
+5.Change int reportAction(int action) method in nativetest.java to what we need

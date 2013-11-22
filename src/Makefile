@@ -98,7 +98,7 @@ PRINT	      = lpr
 # Files
 # ----------------------------------------------------------------------
 
-TARGETS	      = $(TARGET_APPL) $(TARGET_OFSOL) $(TARGET_SIM) $(TARGET_EVA) $(TARGET_GRAPH) $(TARGET_CONVERT)
+TARGETS	      = lib $(TARGET_APPL) $(TARGET_OFSOL) $(TARGET_SIM) $(TARGET_EVA) $(TARGET_GRAPH) $(TARGET_CONVERT)
 
 HDRS	      = $(HDRS_APPL) $(HDRS_OFSOL) $(HDRS_SIM) $(HDRS_EVA) $(HDRS_GRAPH) $(HDRS_CONVERT)
 
