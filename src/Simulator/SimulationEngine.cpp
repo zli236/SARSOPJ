@@ -451,8 +451,8 @@ namespace momdp
 
             // this is the reward for the "actual state" system
             double currReward = getReward(*actStateCompl, currAction);
-            cout<<"Current Action: "<<currAction<<endl;
-            cout<<"Current Reward: "<<currReward<<endl;
+            //cout<<"Current Action: "<<currAction<<endl;
+            //cout<<"Current Reward: "<<currReward<<endl;
 
             DEBUG_TRACE( cout << "currAction " << currAction << endl; );
             DEBUG_TRACE( cout << "actStateCompl sval " << actStateCompl->sval << endl; );
@@ -504,8 +504,9 @@ namespace momdp
             //DEBUG_TRACE( obsPoss.write(cout) << endl; );
 
             //int currObservation = chooseFromDistribution(obsPoss, ((double)rand()/RAND_MAX));
-            int currObservation;
-            currObservation = jniTop->reportAction(currAction);
+            //int currObservation;
+            int currObservation = jniTop->reportAction(currAction);
+            //cout<<"Current observation in c++: "<<currObservation<<endl;
             //cin >> currObservation;
             //getAction();
 
