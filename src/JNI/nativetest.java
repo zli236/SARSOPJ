@@ -21,6 +21,9 @@ public class nativetest {
 	{
 		nativetest nt = new nativetest();
 		nt.r.setSeed(System.currentTimeMillis());
+		//The following line is the parameters to send to the simulator
+		//Generate policy file before using this program. You can generate policy file out.policy using pomdpsol
+		//Also, you need to specify the model file e.g. ../../examples/POMDP/TagAvoid.pomdp
 		String[] params = {"simulate", "--simLen" ,"3" ,"--simNum" ,"100" ,"--policy-file" ,"../out.policy" ,"../../examples/POMDP/TagAvoid.pomdp"};
 		int retval = nt.startSimulator((short)8, params);
 		System.out.println("Returned Value: "+retval);
